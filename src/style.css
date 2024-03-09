@@ -1,0 +1,19 @@
+body {
+  background-color: rgba(0, 0, 0, 0.863);
+  color: #fff;
+  padding: 20px;
+
+}
+
+.text-color{
+  color: red;
+}
+
+.main-card{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  color: black;
+}
+
+
