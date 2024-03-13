@@ -5,12 +5,21 @@ const FormWorks3 = () => {
 
   const [selctCountry, setSelectCountry] = useState("USA");
 
+  const [ischeck, setIsCheck] = useState({
+    hindi: false,
+    english: false,
+    marathi: false,
+  });
+
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Text area value = >", textArea);
 
-    console.log("Selected Country:", selctCountry)
+    console.log("Selected Country:", selctCountry);
+
   };
+
+  
   return (
     <div>
       <form onSubmit={handleSubmit}>
@@ -25,16 +34,15 @@ const FormWorks3 = () => {
 
         <select
           className="form-select mb-4"
-          
           value={selctCountry}
-          onChange={(e)=>setSelectCountry(e.target.value)}
+          onChange={(e) => setSelectCountry(e.target.value)}
         >
-          <option >Select Your Country...</option>
+          <option>Select Your Country...</option>
           <option value="India">India</option>
           <option value="Saudi">Saudi</option>
           <option value="USA">USA</option>
         </select>
-
+        
         <button className="btn btn-info" type="submit">
           Submit
         </button>

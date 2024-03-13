@@ -1,7 +1,10 @@
 import FormWorks from "./WorkingWithForm/FormWorks";
 import FormWorks2 from "./WorkingWithForm/FormWorks2";
 import FormWorks3 from "./WorkingWithForm/FormWorks3";
+import FormWorks4 from "./WorkingWithForm/FormWorks4";
+import LocalStorage from "./localStorage/LocalStorage";
 import "./style.css";
+import WorkuseRef from "./useRef/WorkuseRef";
 
 function App() {
 
@@ -13,7 +16,13 @@ function App() {
 
       {/* <FormWorks2/> */}
 
-      <FormWorks3/>
+      {/* <FormWorks3/> */}
+
+      {/* <FormWorks4/> */}
+
+      {/* <WorkuseRef/> */}
+
+      <LocalStorage/>
     </div>
   );
 }
