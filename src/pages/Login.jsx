@@ -3,11 +3,11 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 
 const Login = () => {
+
   const navigate = useNavigate();
 
   console.log(navigate);
 
-  
 
   return (
     <div className="w-50">
@@ -18,7 +18,8 @@ const Login = () => {
         placeholder="passwprd"
       />
       <h1 onClick={()=>navigate('/contact')}>Go to Contact</h1>
-      <button className="btn btn-success" >
+      
+      <button className="btn btn-success" onClick={()=>navigate('/home')} >
         Login
       </button>
     </div>
