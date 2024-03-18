@@ -1,3 +1,4 @@
+import EffectComp from "./components/EffectComp";
 import Header from "./components/Header";
 import AboutUs from "./pages/AboutUs";
 import ContactUs from "./pages/ContactUs";
@@ -13,22 +14,19 @@ function App() {
 
   const currRoute = location.pathname;
 
-  console.log(currRoute);
+  // console.log(currRoute);
+
+
+  
 
   return (
     <div className="App container bg-dark text-light cx-main p-4">
 
 
+
       {/* {currRoute === "/about" && <h3>Current Route is About Us</h3>} */}
 
-
-     
-
-      {currRoute === "/" ? <> </> : <Header /> }
-
-     
-
-      
+      {/* {currRoute === "/" ? <> </> : <Header />}
 
       <Routes>
         <Route path="/" element={<Login />} />
@@ -40,8 +38,9 @@ function App() {
         <Route path="contact" element={<ContactUs />} />
 
         <Route path="*" element={<NotFound />} />
+      </Routes> */}
 
-      </Routes>
+      <EffectComp/>
     </div>
   );
 }
