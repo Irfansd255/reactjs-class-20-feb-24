@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { AppContext } from "../context/AppContext";
 
 const Home = () => {
-  console.log(useContext(AppContext));
+  // console.log(useContext(AppContext));
 
   const { myName, addItems, setAddItems } = useContext(AppContext);
 
