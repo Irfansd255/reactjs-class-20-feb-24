@@ -14,21 +14,18 @@ const Dashboard = () => {
   //   };
 
   const getData = async () => {
-
     try {
       const res = await fetch("https://jsonplaceholder.typicode.com/postsg");
 
-      console.log(res)
+      console.log(res);
 
-      if(!res.ok){
-        throw new Error("nework issue")
+      if (!res.ok) {
+        throw new Error("nework issue");
       }
       const posts = await res.json();
 
       setData(posts);
-    } 
-    
-    catch (error) {
+    } catch (error) {
       console.log(error);
     }
   };
