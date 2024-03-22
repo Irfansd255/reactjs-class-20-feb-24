@@ -15,7 +15,7 @@ const Dashboard = () => {
 
   const getData = async () => {
     try {
-      const res = await fetch("https://jsonplaceholder.typicode.com/postsg");
+      const res = await fetch("https://jsonplaceholder.typicode.com/posts");
 
       console.log(res);
 
