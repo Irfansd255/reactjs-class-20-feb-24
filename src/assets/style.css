@@ -1,0 +1,13 @@
+body{
+    background-color: rgba(128, 128, 128, 0.384);
+}
+
+.form-control.is-invalid, .was-validated .form-control:invalid, .form-control.is-valid, .was-validated .form-control:valid{
+    background-image: none;
+}
+
+.card-style{
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 15px;
+}
